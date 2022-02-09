@@ -1,4 +1,28 @@
 # Lab 2
+
+#Updates from Dawson Butts
+
+1. This code does a port scan on a given range (start int, end int) and tests to see 
+    if these ports are open or closed. This can be used to possibly show what a user 
+    is doing, given these specific ports. The code returns the total number of ports 
+    scanned (inclusive of both start and end).
+
+2. Modifications include:   Adding the usage and my name at the top comments
+                            Adding DialTimeout so the program can run faster
+                            Returning -p for a closed port number, rather than 0
+                            Adding inputs 'start' and 'end' to scan over just a given range
+                            Adding a closedports slice to keep track of those ports as well as the open ones
+                            Added the closed ports to the print outs 
+                            Sorted the closed ports
+                            Returned the total number of ports scanned, not just open ports 
+
+3. Chosen mods for #5: I chose to include more inputs for the port scan. Rather than 
+    automatically scanning over 1024 ports, this allows users to specify their start 
+    and end ports of what they want to scan. This allows for testing on only specific 
+    ports in question and can save time. These inputs are both type 'int', so that the
+    function is called 'PortScanner(5, 100)'
+
+
 Due: Feb 11 2022
 
 1. Update Your Forked Repository
