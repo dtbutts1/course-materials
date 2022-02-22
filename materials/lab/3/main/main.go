@@ -28,6 +28,10 @@ func main() {
 		info.QueryCredits,
 		info.ScanCredits)
 
+	fmt.Printf(os.Args[1] + "\n")
+	fmt.Printf(os.Args[2] + "\n")
+
+
 	hostSearch, err := s.HostSearch(os.Args[1], os.Args[2])
 	if err != nil {
 		log.Panicln(err)

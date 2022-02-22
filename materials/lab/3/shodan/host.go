@@ -46,7 +46,7 @@ func (s *Client) HostSearch(q string, facet string) (*HostSearch, error) {
 		fmt.Sprintf("%s/shodan/host/search?key=%s&query=%s&facets=%s", BaseURL, s.apiKey, q, facet),
 	)
 	// fmt.Printf("HERE IS THE URL BEING INPUT")
-	// fmt.Printf("%s/shodan/host/search?key=%s&query=%s&facets=%s", BaseURL, s.apiKey, q, facet)
+	fmt.Printf("%s/shodan/host/search?key=%s&query=%s&facets=%s", BaseURL, s.apiKey, q, facet)
 	//time.Sleep(5 * time.Second)
 	if err != nil {
 		return nil, err
