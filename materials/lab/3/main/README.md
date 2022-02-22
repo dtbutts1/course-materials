@@ -5,7 +5,7 @@ README for main folder
 
 In the main folder, I altered main() to accept another command line input
 so that facets could be input and used in host.go. I changed the input 
-validation to include 3 inputs (main, <query>, <facets>). 
+validation to include 3 inputs (main, query, facets). 
 
 I also added the new parameter to the call of the HostSearch method 
 further down into the main function. 
