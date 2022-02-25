@@ -11,4 +11,4 @@ I also added the new parameter to the call of the HostSearch method
 further down into the main function. 
 
 This method can be called on the command line by: 
-SHODAN_API_KEY=Your_Api_Key ./main city:Laramie port:2
+SHODAN_API_KEY=Your_Api_Key ./main <searchTerm> <facets>
