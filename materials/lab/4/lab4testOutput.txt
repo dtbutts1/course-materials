@@ -1,0 +1,177 @@
+// Dawson Butts
+// Lab 4 tests
+
+For assignments data structure:
+
+
+
+GetAssignments:
+https://port-8080-go-dbooty-dbutts1306043.codeanyapp.com/assignments GET
+
+{
+    "assignments": [
+        {
+            "id": "Mike1A",
+            "Title": "Lab 4 ",
+            "desc": "Some lab this guy made yesteday?",
+            "points": 20
+        }
+    ]
+}
+
+
+
+Create: (after adding)
+https://port-8080-go-dbooty-dbutts1306043.codeanyapp.com/assignment POST
+
+{
+    "assignments": [
+        {
+            "id": "Mike1A",
+            "Title": "Lab 4 ",
+            "desc": "Some lab this guy made yesteday?",
+            "points": 20
+        },
+        {
+            "id": "Daws6",
+            "Title": "69test",
+            "desc": "midterms",
+            "points": 40
+        }
+    ]
+}
+
+
+
+Delete: (after deleting Mike1A)
+https://port-8080-go-dbooty-dbutts1306043.codeanyapp.com/assignment/Mike1A DELETE
+
+{"status":"Success"}
+
+---->
+
+{
+    "assignments": [
+        {
+            "id": "Daws6",
+            "Title": "69test",
+            "desc": "midterms",
+            "points": 40
+        }
+    ]
+}
+
+
+
+GetAssignment: (using Daws6)
+https://port-8080-go-dbooty-dbutts1306043.codeanyapp.com/assignment/Daws6 GET
+
+{
+    "id": "Daws6",
+    "Title": "69test",
+    "desc": "midterms",
+    "points": 40
+}
+
+
+
+UpdateAssignment: (using Mike1A)
+https://port-8080-go-dbooty-dbutts1306043.codeanyapp.com/assignments/Mike1A PUT
+
+(after update)
+
+{
+    "assignments": [
+        {
+            "id": "Mike1A",
+            "Title": "evenNewer",
+            "desc": "Dawson made this",
+            "points": 100
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+For classes data structure:
+
+
+
+GetClasses:
+https://port-8080-go-dbooty-dbutts1306043.codeanyapp.com/classes GET
+
+{
+    "classes": [
+        {
+            "id": "Cyber1",
+            "CourseNumber": 1100,
+            "name": "Topics in Cybersecurity",
+            "professor": "Mike Borowzek",
+            "department": "COSC"
+        }
+    ]
+}
+
+
+
+GetClass:
+https://port-8080-go-dbooty-dbutts1306043.codeanyapp.com/class/Cyber1 GET
+
+{
+    "id": "Cyber1",
+    "CourseNumber": 1100,
+    "name": "Topics in Cybersecurity",
+    "professor": "Mike Borowzek",
+    "department": "COSC"
+}
+
+
+
+CreateClass: (after adding using the url below)
+https://port-8080-go-dbooty-dbutts1306043.codeanyapp.com/class POST
+
+{
+    "classes": [
+        {
+            "id": "Cyber1",
+            "CourseNumber": 1100,
+            "name": "Topics in Cybersecurity",
+            "professor": "Mike Borowzek",
+            "department": "COSC"
+        },
+        {
+            "id": "Engl1010",
+            "CourseNumber": 1010,
+            "name": "Speech",
+            "professor": "Tracy Chapman",
+            "department": "ENGL"
+        }
+    ]
+}
+
+
+
+DeleteClass: (after deleting Cyber1)
+https://port-8080-go-dbooty-dbutts1306043.codeanyapp.com/class/Cyber1 DELETE
+
+{"status":"Success"}
+
+---->
+
+{
+    "classes": [
+        {
+            "id": "Engl1010",
+            "CourseNumber": 1010,
+            "name": "Speech",
+            "professor": "Tracy Chapman",
+            "department": "ENGL"
+        }
+    ]
+}
