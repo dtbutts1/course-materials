@@ -14,7 +14,6 @@ import (
 	"regexp"
 )
 
-const LOG_LEVEL = 2		//apply logging selection 
 var dontAdd bool = false	//whether it is duplicate
 var numOfHits int = 0	//number of files
 var rootDir string = "/home/cabox"
@@ -164,7 +163,7 @@ func MainPage(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
     //TODO_8 - Write out something better than this that describes what this api does
 
-	fmt.Fprintf(w, "<html><body><H1>Welcome to my awesome File page</H1><p>Here is my new addition.</p></body>")
+	fmt.Fprintf(w, "<html><body><H1>Welcome to my awesome File page</H1><p>/indexer will add hits to Files</p><p>/search will pull specific regular expressions</p><p>/api-status will show regexes and api status</p><p>/clear will empty preset regexes</p><p>/reset will add presets back</p><p>/addsearch/{REGEX} will add a new regex to the searches</p></body>")
 }
 
 

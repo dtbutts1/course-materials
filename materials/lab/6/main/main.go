@@ -14,18 +14,18 @@ import (
 //TODO_1: When LOG_LEVEL = 1 LOG API details only 
 //TODO_1: When LOG_LEVEL = 2 LOG API details and file matches (e.g., everything)
 
-const LOG_LEVEL = 2		//apply logging selection 
+//THE CONSTANT IS IN SCRAPE.GO, THEN IMPORTATED HERE
 
 func main() {
 	
-	if(LOG_LEVEL > 0){		//print check
+	if(scrape.LOG_LEVEL > 0){		//print check
 		log.Println("starting API server")
 	}
 
 	//create a new router
 	router := mux.NewRouter()
 
-	if(LOG_LEVEL > 0){		//print check
+	if(scrape.LOG_LEVEL > 0){		//print check
 		log.Println("creating routes")
 	}
 	

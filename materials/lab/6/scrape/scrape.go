@@ -11,6 +11,8 @@ import (
 
 //==========================================================================\\
 // || GLOBAL DATA STRUCTURES  ||
+const LOG_LEVEL = 0		//apply logging selection 
+
 
 //ADVANCED: This is perhaps a terrible structure since multiple a filename is NOT guarenteed to be unique; consider an array of Locations? 
 //CHALLENGE: Replace this Local Structure with a Key-Value DB like REDIS
