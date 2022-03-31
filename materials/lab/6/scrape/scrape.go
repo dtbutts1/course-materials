@@ -43,6 +43,9 @@ func resetRegEx(){
 
 func clearRegEx(){
      //TODO_15 - Validate that this works as expected and doesn't cause issues
+
+	 //validated by clearing and then calling '/api-status', seeing that it is cleared
+
     regexes = nil
 }
 
